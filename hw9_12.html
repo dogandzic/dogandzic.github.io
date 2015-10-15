@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Homework 9</title>
+	<link type="text/css" rel="stylesheet" href="tufte.css"/>
+	<meta name="bibtex" content="ee524"/>
+	<meta name="bibliostyle" content="IEEEtran"/>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }}); 
+MathJax.Hub.Config({
+tex2jax: {
+inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+}
+});
+</script> <script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+
+<p><span class="math">\(
+   \def\df{\triangleq}
+   \def\E{\mathrm{e}}
+   \def\J{\mathrm{j}}
+\def\Realpart{\mathop{\rm Re}\nolimits}
+\def\td{\text{d}}
+\)</span></p>
+
+<h1 id="ee524fall2012:hw9duedec.710onoffcampus2012.">EE 524, Fall 2012: HW #9, due Dec. 7/10 (on/off campus) 2012.</h1>
+
+<h2 id="problem27inchapter4ofthetextbook.">1. Problem 27 in Chapter 4 of the textbook.</h2>
+
+<h2 id="linearversuscircularconvolution.">2. Linear versus circular convolution.</h2>
+
+<p>Consider two finite-length
+sequences $x_1[n]$ and $x_2[n]$ for which $x_1[n] = 0$ outside the
+interval $0 \leqslant n \leqslant 49$ and $x_2[n] = 0$ outside the
+interval $0 \leqslant n \leqslant 9$.</p>
+
+<p>(a) What is the maximum possible number of nonzero values in the linear
+ convolution of $x_1[n]$ and $x_2[n]$?</p>
+
+<p>(b) The $50$-point circular convolution of $x_1[n]$ and $x_2[n]$ is
+ $$x_1[n] \circledast_{50} x_2[n] =
+\{ 10, \,\, 0 \leqslant n \leqslant 49 \}.$$ </p>
+
+<p>The first five points of the linear convolution $\star$ of $x_1[n]$ and $x_2[n]$ are
+<span class="math">\[
+    y[n] \big|_{n=0,1,2,3,4} = ( x_1[n] \star x_2[n] ) \big|_{n=0,1,2,3,4} = 5.
+\]</span>
+ Determine as many points as possible of the linear convolution
+ $y[n]= x_1[n] \star x_2[n]$.</p>
+
+<h2 id="zeropadding">3. Zero padding</h2>
+
+<p>A length-$N$ signal $x[n], \, n=0,1,\dotsc,N&#8211;1$ is zero-padded to
+length $2 N$, yielding
+<span class="math">\[x_{\text{a}}[n] = \underbrace{ \\{ x[0], x[1], \ldots, x[N-1], 0,
+    0, \ldots, 0 \\} }_{
+\text{length $2 N$}},\]</span> </p>
+
+<p>and the corresponding DFT <span class="math">\(X_{\text{a}}^\td[k],\,k=0,1,\ldots,2 N - 1\)</span> is computed. The length-$N$
+inverse DFT of the sequence of odd-numbered terms $X_{\text{a}}^\td[2 l + 1]$ (for all $l$ such that $2 l + 1 \in {0,1,\ldots,2 N - 1}$) is then computed. What is the result of this operation?</p>
+
+<p>Express the odd-numbered terms $X_{\text{a}}^\td[2 l + 1]$, $l$ integer,
+as a length-$N$ DFT of a certain
+sequence. Recall also the identity <span class="math">\(W_N^n = W_{N/n}\)</span>.</p>
+
+</body>
+</html>
