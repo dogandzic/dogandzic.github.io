@@ -1,0 +1,1 @@
+asciidoc -o index.html MAC.asciidoc

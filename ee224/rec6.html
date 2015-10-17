@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>EE 224 recitation 6, practice</title>
+	<link type="text/css" rel="stylesheet" href="http://home.eng.iastate.edu/~ald/ald_files/article.css"/>
+	<meta name="bibtex" content="e524"/>
+	<meta name="bibliostyle" content="IEEEtran"/>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }}); 
+MathJax.Hub.Config({
+tex2jax: {
+inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+}
+});
+</script> <script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<p><span class="math">\(
+   \def\df{\triangleq}
+   \def\E{\mathrm{e}}
+   \def\J{\mathrm{j}}
+ \def\upi{&pi;}
+\def\Exp{{\rm E}\,}
+\DeclareMathOperator{\Pr}{Pr}
+\DeclareMathOperator{\Realpart}{Re}
+\def\td{\text{d}}
+\def\dif{{\rm d}}
+\)</span></p>
+
+<h4 id="objective">Objective</h4>
+
+<ul>
+<li>Apply properties to determine Fourier series representations.</li>
+</ul>
+
+<h4 id="signalmanipulations">Signal manipulations</h4>
+
+<p><img src="graphics/perseql5.png" width="600px" /></p>
+
+<p>We know the Fourier series representation of the periodic square wave $x(t)$.
+Find the Fourier series representation of</p>
+
+<p><img src="graphics/FSprops2.png" width="600px" /></p>
+
+<h4 id="amplifierdistortion">Amplifier distortion</h4>
+
+<p>High-power amplifiers often use a different set of transistors for
+positive- and negative-polarity
+outputs. If these are not balanced exactly,
+the result is distortion in the amplifier output. If
+we apply a sinusoid to the input of such an amplifier,
+the result is an output that looks like</p>
+
+<p><img src="graphics/exfig.png" width="600px" /></p>
+
+<p>where $0 &lt; A &lt; 1$.
+The ideal waveform (in dashed line) is a sine with amplitude $1$. The actual
+output $x(t)$ (in full line) has positive and negative lobes with amplitudes $1+A$
+and $1-A$, respectively: the maximum value at the positive
+lobes is $1+A$
+and the minimum value at the negative lobes is $-(1-A)$.
+Assume that the ideal waveform is
+<span class="math">\[
+x_{\text{i}}(t) = \sin( \upi t).
+\]</span>
+Note that the output $x(t)$ is <em>not</em> just a sinusoid
+plus a DC component.</p>
+
+<p>(a) What are the fundamental frequency $\omega_0$ and
+period $T_0$ of $x(t)$?</p>
+
+<p>(b) Think of the actual output signal $x(t)$ as the ideal output
+signal <span class="math">\(x_{\text{i}}(t)=\sin( \pi \, t)\)</span> plus an error signal $e(t)$:
+<span class="math">\[
+    x(t) = x_{\text{i}}(t) + e(t).
+\]</span> Sketch the error signal $e(t)$ as a function of time
+$t$. Label your plot carefully.</p>
+
+<p>(c) What are the fundamental period and frequency of $e(t)$?</p>
+
+<p>(d) Find the Fourier-series representation of <span class="math">\(x_{\text{i}}(t)=\sin( \upi t)\)</span>. What are the fundamental frequency and period of <span class="math">\(x_{\text{i}}(t)\)</span>?</p>
+
+<p>(e) We wish to compute the Fourier-series representation of the
+actual output $x(t)$. For which Fourier coefficients $a_k$ of $x(t)$
+can you state with certainty that they are zero?</p>
+</body>
+</html>

@@ -1,0 +1,194 @@
+# jemdoc: menu{MENU}{pubs.html}, addcss{person.css}, nofooter, fwtitle
+##= Aleksandar Dogandžić's Publications
+
+~~~
+{Listed by}
+[https://impactstory.org/d \[impactstory\]] 
+[http://scholar.google.com/citations?user=Ej6rYR0AAAAJ \[Google\]] 
+[http://www.ams.org/mathscinet/search/publications.html?pg1=IID&s1=716292 \[MathSciNet\]] 
+[http://arxiv.org/find/all/1/au:+dogandzic_aleksandar/0/1/0/all/0/1 \[arXiv\]]
+~~~
+
+~~~
+{Technical Reports}
+
+
+R. Gu and A. Dogandžić, "Polychromatic X-ray CT image reconstruction
+and mass-attenuation spectrum estimation," Sep. 2015, arXiv: 
+[http://arxiv.org/abs/1509.02193 1509.02193]
+ \[stat.ME\].
+
+
+R. Gu and A. Dogandžić, "Reconstruction of nonnegative sparse signals using accelerated proximal-gradient algorithms," version 3, Mar. 2015, arXiv: 
+[http://arxiv.org/abs/1502.02613 1502.02613]
+\[stat.CO\].
+
+K. Qiu and A. Dogandžić, “ECME thresholding methods for sparse signal
+reconstruction,” version 3, ArXiv e-prints, Nov. 2010. arXiv:
+[http://arxiv.org/abs/1004.4880 1004.4880] \[cs.IT\].
+
+
+
+
+~~~
+    
+~~~
+{Journal Papers}
+
+Z. Song and A. Dogandžić, "[https://sites.google.com/site/mpemsite
+  A max-product EM algorithm for reconstructing Markov-tree sparse
+  signals from compressive samples]," /IEEE Trans. Signal Process.,/
+vol. 61, no. 23, pp. 5917–5931, 2013.
+
+K. Qiu and A. Dogandžić, "[ECME.html Sparse signal reconstruction via
+ECME hard thresholding]," /IEEE Trans. Signal Process.,/ vol. 60,
+pp. 4551-4569, Sep. 2012.
+
+K. Qiu and A. Dogandžić, "[GEM.htm
+Sparse signal reconstruction from quantized noisy measurements via GEM hard
+thresholding]," /IEEE Trans. Signal Process.,/ vol. 60, pp. 2628-2634, May 
+2012.
+
+K. Qiu and A. Dogandžić, "[ExCoV.htm Variance-component based sparse signal
+reconstruction and model selection]," /IEEE Trans. Signal Process.,/ vol. 
+58,
+pp. 2935-2952, Jun. 2010.
+
+A. Dogandžić and K. Qiu, "[DecenFieldEst.html Decentralized random-field
+estimation for sensor networks using quantized spatially correlated data 
+and
+fusion-center feedback]," /IEEE Trans. Signal Process./, vol. 56, pp.
+6069-6085, Dec. 2008.
+
+A. Dogandžić and B.H. Zhang, "Bayesian complex amplitude estimation and 
+adaptive signal detection in low-rank interference," /IEEE Trans. Signal 
+Process./, vol. 55, pp. 1176-1182, Mar. 2007, ([complampest.pdf pdf]). 
+
+W. Mo, Z.D. Wang, and A. Dogandžić, "EM-based iterative receiver for coded 
+MIMO systems in unknown spatially correlated noise," /Wirel. Commun. Mobile 
+Comput./, vol. 7, pp. 81-89, Jan. 2007, ([EMturbo.pdf pdf]).
+
+A. Dogandžić and B.H. Zhang, "Bayesian NDE defect signal analysis," /IEEE 
+Trans. Signal Process./,    vol. 55, pp. 372-378, Jan. 2007, 
+([paperslice.pdf pdf]).
+
+J. Wang, A. Dogandžić, and A. Nehorai, "Maximum likelihood estimation of 
+compound-Gaussian clutter and target parameters," /IEEE Trans. Signal 
+Process./, vol. 54, pp. 3884-3898, Oct. 2006, ([Compound.pdf pdf]).
+
+A. Dogandžić and B.H. Zhang, "Distributed estimation and detection for 
+sensor networks using  hidden Markov random field models," /IEEE Trans. 
+Signal Process./, vol. 54, pp. 3200-3215, Aug. 2006, ([HMRF.pdf pdf]).
+
+D. Gutiérrez, A. Nehorai, and A. Dogandžić, "Performance analysis of
+reduced-rank beamformers for estimating dipole source signals using
+EEG\/MEG," /IEEE Trans.  Biomedical Engineering/, vol. 53, pp. 840-844,
+May 2006. ([bme.pdf pdf]).
+
+A. Dogandžić and P. Xiang,"Estimating statistical properties of 
+eddy-current signals from steam generator tubes," /IEEE Trans. Signal 
+Process./,  vol. 53, pp. 3342-3348, Aug. 2005, ([eddy.pdf pdf]).
+
+A. Dogandžić and J.H. Jin, "Estimating statistical properties of MIMO 
+fading channels," /IEEE Trans. Signal Process./, vol. 53, pp.  3065-3080, 
+Aug. 2005, ([statpropMIMO.pdf pdf]). 
+
+A. Dogandžić and B.H. Zhang,"Dynamic shadow power estimation for wireless 
+communications," /IEEE Trans. Signal Process./, vol. 53, pp. 2942-2948, 
+Aug. 2005, ([dynamic.pdf pdf]).
+
+A. Dogandžić and B.H. Zhang, "Estimating Jakes' Doppler power spectrum 
+parameters using the Whittle approximation," /IEEE Trans. Signal Process./, 
+vol. 53, pp. 987-1005, Mar. 2005, ([Doppler.pdf pdf]). 
+
+A. Dogandžić and J.H. Jin, "Maximum likelihood estimation of statistical 
+properties of composite gamma-lognormal fading channels," /IEEE Trans. 
+Signal Process./, vol. 52, pp. 2940-2945, Oct. 2004, ([fadshadest.pdf 
+pdf]). 
+
+A. Dogandžić, W. Mo, and Z.D. Wang, "Semi-blind SIMO flat-fading channel 
+estimation in unknown spatially correlated noise using the EM algorithm," 
+/IEEE Trans. Signal Process./, vol. 52, pp. 1791-1797, Jun. 2004, 
+([semiblind.pdf pdf]).   
+
+A. Dogandžić and A. Nehorai, "Generalized multivariate analysis of 
+variance: a unified framework for signal processing in correlated noise," 
+/IEEE Signal Process. Mag./, vol. 20, pp. 39-54, Sept. 2003, ([gmanova.pdf 
+pdf]). [gmanova.html Bibliography update] (related signal processing 
+articles that appeared after the publication of this article).
+
+A. Dogandžić, "Chernoff bounds on pairwise error probabilities of 
+space-time codes," /IEEE Trans. Inform. Theory/, vol. 49, pp. 1327-1336, 
+May 2003, ([Chernoff.pdf pdf]).
+
+A. Dogandžić and A. Nehorai, "Finite-length MIMO adaptive equalization 
+using canonical correlation analysis," /IEEE Trans. Signal Process./, vol. 
+50, pp. 984-989, April 2002, ([MIMOpaper.pdf pdf]). 
+
+A. Dogandžić and A. Nehorai, "Space-time fading channel estimation and 
+symbol detection in unknown spatially correlated noise," /IEEE Trans. 
+Signal Process./, vol. 50, pp. 457-474, Mar. 2002, ([spacetime.pdf pdf]). 
+
+A. Dogandžić and A. Nehorai, "Cramér-Rao bounds for estimating range, 
+velocity, and direction with an active array," /IEEE Trans. Signal 
+Process./, vol. 49, pp. 1122-1137, Jun. 2001, ([CRBpaper.pdf pdf]). 
+
+A. Dogandžić and A. Nehorai, "Estimating evoked dipole responses in unknown 
+spatially correlated noise with EEG\/MEG arrays," /IEEE Trans. Signal 
+Process./, vol. 48, pp. 13-25, Jan. 2000, ([MEGpaper.pdf pdf]).
+~~~
+
+~~~
+{Book Chapter} 
+
+A. Dogandžić and A. Nehorai, 
+"EEG\/MEG spatio-temporal dipole source estimation and sensor array design," in /High-Resolution and 
+Robust Signal Process./, Y. Hua, A.B. Gershman, and Q. Cheng (Eds.), New 
+York: Marcel Dekker, 2003, Ch. 7, pp. 393-442,  ([bookchapter.pdf pdf]).  
+~~~
+
+~~~
+{Selected Conference Proceedings}
+
+
+R. Gu and A. Dogandžić, “Nesterov’s proximal-gradient signal recovery from
+com- pressive Poisson measurements,” /[http://www.asilomarssc.org  Proc.
+Asilomar Conf. Signals, Syst.  Comput.],/ Pacific
+Grove, CA, Nov. 2015, to appear.
+
+
+R. Gu and A. Dogandžić, "[https://sites.google.com/site/neprogr A fast proximal gradient algorithm for reconstructing
+  nonnegative signals with sparse transform coefficients]," in /[http://www.asilomarssc.org  Proc. Asilomar Conf. Signals, Syst. 
+Comput.],/  Pacific Grove, CA, Nov. 2014, pp. 1662–1667.
+  
+
+R. Gu and A. Dogandžić, "[https://www.researchgate.net/publication/267155880_Polychromatic_Sparse_Image_Reconstruction_and_Mass_Attenuation_Spectrum_Estimation_via_B-Spline_Basis_Function_Expansion Polychromatic sparse image reconstruction and mass attenuation spectrum 
+  estimation via B-spline basis function expansion]," in /[http://www.qndeprograms.org/2014 Rev. Progress Quantitative
+Nondestructive Evaluation],/ ser. AIP Conf. Proc. Vol. 34 1650, Melville, NY,
+2015, pp. 1707–1716.
+
+
+
+
+R. Gu and A. Dogandžić, "[icassp13/index.html Beam hardening correction via 
+mass attenuation discretization]," in /[http://www.icassp2013.com
+Proc. IEEE Int. Conf. Acoust., Speech, Signal Process.],/ Vancouver,
+Canada, May 2013, pp. 1085-1089.
+
+
+K. Qiu and A. Dogandžić, "[DMECME.htm Nonnegative signal reconstruction 
+from compressive samples via a difference map ECME algorithm]," in /Proc. 
+IEEE Workshop on Statistical Signal Process.,/ Nice, France,   Jun. 2011,  
+pp. 561-564.
+
+K. Qiu and A. Dogandžić, "ECME hard thresholding methods for image 
+reconstruction from compressive samples," in /Applications of Digital Image 
+Process. XXXIII/,   Andrew G. Tescher  (Ed.), Proc. SPIE, vol. 7798,  San 
+Diego, CA: SPIE,    Aug. 2010, 779813, ([ECME_SPIE.pdf pdf]).
+~~~
+
+
+
+
+
+

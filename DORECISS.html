@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+  
+  
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>DORE</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFFF;
+}
+.style3 {	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+.style4 {font-size: 18px; font-family: Arial, Helvetica, sans-serif;}
+.style5 {font-size: 16px}
+-->
+</style>
+</head>
+
+<body>
+<p align="left" class="style3">Double overrelaxation thresholding methods for sparse signal reconstruction</p>
+<div align="left">
+  <p class="style4"> <a href="http://www.linkedin.com/pub/kun-qiu/1b/b4b/a51" target="_blank">K. Qiu</a> and <a href="http://home.eng.iastate.edu/~ald/" target="_blank">A. Dogand&#382;i&#263;</a></p>
+  <p class="style4"> in <em>Proc. 44th Annu. Conf. Inform. Sci. Syst.</em>, Princeton, NJ, Mar. 2010.</p>
+  <p class="style4"><a href="DORERef.bib" target="_blank">B<font size="-1">IB</font>T<font size="-1">E</font>X Reference</a></p>
+  <p align="justify" class="style4"><strong>Abstract:<br>
+  </strong><span class="style5">We propose double overrelaxation (DORE) and automatic double overrelaxation (ADORE) thresholding methods for sparse signal reconstruction. The measurements follow an underdetermined linear model, where the regression-coefficient vector is a sum of an unknown deterministic sparse signal component and a zero-mean white Gaussian component with an unknown variance. We first introduce an expectation-conditional maximization either (ECME) algorithm for estimating the sparse signal and variance of the random signal component and then describe our DORE thresholding scheme. The DORE scheme interleaves two successive overrelaxation steps and ECME steps, with goal to accelerate the convergence of the ECME algorithm. Both ECME and DORE algorithms aim at finding the maximum likelihood (ML) estimates of the unknown parameters assuming that the signal sparsity level is <em>known</em>. If the signal sparsity level is <em>unknown</em>, we propose an <em>unconstrained sparsity selection (USS)</em> criterion and show that, under certain conditions, maximizing the USS objective function with respect to the signal sparsity level is equivalent to finding the sparsest solution of the underlying underdetermined linear system. Our ADORE scheme demands no prior knowledge about the signal sparsity level and estimates this level by applying a golden-section search to maximize the USS objective function. We employ the proposed methods to reconstruct images from sparse tomographic projections and compare them with existing approaches that are feasible for large-scale data. Our numerical examples show that DORE is significantly faster than the ECME and related iterative hard thresholding (IHT) algorithms. </span> </p>
+  <p class="style4"><strong>Full paper download:</strong><br>
+    <a href="ciss2010.pdf"><img src="pdficon.gif" width="32"
+    height="32" border="0"></a> (148 KB)</p>
+  <p class="style4"><strong>Detailed report on ArXiv:</strong><br>
+(<a href="http://arxiv.org/abs/1004.4880">ECME thresholding methods for sparse signal reconstruction</a>) </p>
+  <p class="style4">[<a href="DOREarXivRef.htm">L<font
+  size="-1">A</font>T<font size="-1">E</font>X and B<font size="-1">IB</font>T<font size="-1">E</font>X Reference</a>] </p>
+  <p align="justify" class="style4"><strong>Matlab code:</strong><strong><br>
+    </strong> The Matlab codes for the double overrelaxation (DORE) and automatic double overrelaxation (ADORE) thresholding methods proposed in the paper. All the simulation results reported in the above paper can be reproduced from the package. Please read the enclosed readme file as well. If you use this code in your research and publications, please refer to this paper. The package is only tested on PCs running Windows and should be able to run on other platforms if the appropriate wavelet toolbox is downloaded from the <a href="http://www-dsp.rice.edu/software/rice-wavelet-toolbox">Rice wavelet toolbox </a>.<br>
+    <a href="DORE_1.0.zip"><img src="zipicon.png" width="36" height="42" border="0"></a>(Version 1.0, last updated Mar. 5, 2010) </p>
+<p align="justify" class="style4"><strong>Follow-up work:</strong><strong><br>
+    </strong> <a href="http://users.fmrib.ox.ac.uk/%7Etblumens/index.html">T. Blumensath</a> has recently proposed <a href="http://users.fmrib.ox.ac.uk/%7Etblumens/sparsify/sparsify.html">an IHT version of DORE</a>.</p>
+</div>
+
+
+
+</body>
+</html>

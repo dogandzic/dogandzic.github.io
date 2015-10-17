@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+  
+  
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>ExCoV</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFFF;
+}
+.style3 {	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+.style4 {font-size: 18px; font-family: Arial, Helvetica, sans-serif;}
+.style7 {font-size: 16px}
+-->
+</style>
+</head>
+
+<body>
+<p align="left" class="style3">Variance-component based sparse signal reconstruction and model selection</p>
+<div align="left">
+  <p class="style4">  <a href="http://home.eng.iastate.edu/%7Ekqiu/Frame_main">K. Qiu</a> and <a href="http://home.eng.iastate.edu/%7Eald/">A. Dogand&#382;i&#263;<br>
+  </a><strong>
+  </strong> <em>I</em><em>EEE Trans. Signal Processing</em>, vol. 58, pp. 2935-2952, Jun. 2010. </p>
+  <p class="style4">[<a href="ExCoVRef.htm">L<font
+  size="-1">A</font>T<font size="-1">E</font>X and B<font size="-1">IB</font>T<font size="-1">E</font>X Reference</a>] </p>
+  <p align="justify" class="style4"><strong>Abstract:<br>
+    </strong><span class="style7">We propose a variance-component probabilistic model for sparse signal reconstruction and model selection. The
+    measurements follow an underdetermined linear model, where the unknown regression vector (signal) is sparse or 
+    approximately sparse and noise covariance matrix is known up to a constant. The signal is composed of two disjoint
+    parts: a part with significant signal elements and the complementary part with insignificant signal elements that have
+    zero or small values. We assign distinct variance components to the candidates for the significant signal elements
+    and a single variance component to the rest of the signal; consequently, the dimension of our model&rsquo;s parameter
+    space is proportional to the assumed sparsity level of the signal. We derive a generalized maximum likelihood
+    (GML) rule for selecting the most efficient parameter assignment and signal representation that strikes a balance
+    between the accuracy of data fit and compactness of the parameterization. We prove that, under mild conditions, the
+    GML-optimal index set of the distinct variance components <em>coincides</em> with the support set of the sparsest solution to
+    the underlying underdetermined linear system. Finally, we propose an expansion-compression variance-component
+    based method (ExCoV) that aims at maximizing the GML objective function and provides an approximate GML estimate of the significant signal element set and an empirical Bayesian signal estimate. The ExCoV method is
+    <em>automatic</em> and demands no prior knowledge about signal-sparsity or measurement-noise levels. We also develop
+    a computationally and memory efficient approximate ExCoV scheme suitable for large-scale problems, apply the
+    proposed methods to reconstruct one- and two-dimensional signals from compressive samples, and demonstrate
+    their reconstruction performance via numerical simulations. Compared with the competing approaches, our schemes
+    perform particularly well in challenging scenarios where the noise is large or the number of measurements is small. </span> </p>
+  <p class="style4"><strong>Full paper download:</strong><br>
+    <a href="ExCoV.pdf" target="_blank"><img src="pdficon.gif" width="32"
+    height="32" border="0"></a>(1.3 MB)<br>
+  (also <a
+href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5424079" target="_blank">available
+in the IEEE <em>Xplore</em> Digital Library</a>.)</p>
+  <p align="justify" class="style4"><strong>Matlab code:</strong><strong><br>
+    </strong> The Matlab code for the Expansion-compression Variance-component based  method (ExCoV) proposed in the paper. All the
+simulation results reported in the above paper can be reproduced from the package.
+
+
+ Please read the enclosed readme file as well. If you use this code in your research and publications, please refer to this paper. <br>
+  <a href="ExCoV%202.1.zip"><img src="zipicon.png" width="36" height="42" border="0"></a>(Version 2.1, last updated Dec. 29, 2009) </p>
+  <p align="justify" class="style4"><strong>Features of  
+
+
+ ExCoV: <br><br>
+  </strong> ExCoV
+
+ is <em>automatic </em>and does not need any convergence tolerance level or threshold. Therefore, using 
+
+
+ ExCoV
+
+ is easy: just input&nbsp;<br>
+&nbsp;&nbsp;- &nbsp;the measurement column vector and<br>
+&nbsp;&nbsp;- &nbsp;the sensing matrix (number of measurements by the
+length of signal) <br>
+  and 
+
+
+ ExCoV
+
+ will do the rest. For more details on using 
+
+
+ ExCoV
+
+ and running the demo, please refer to the readme file in the package. </p>
+  <p align="justify" class="style4">Compared with competing approaches,
+	
+
+
+ ExCoV
+
+ performs particularly well in challenging scenarios where the noise is large or the number of measurements is small, see the mean squared error curves below.</p>
+  <p align="justify" class="style4"><strong>Illustrative Examples:
+  <br><br> 
+  </strong> The following videos show the reconstruction
+  progress of our 
+
+
+ ExCoV
+
+ algorithm. The sparse signal of length 512
+  contains 20 randomly placed binary spikes, taking values -1 or +1
+  with equal probability.&nbsp;We took 100 noisy measurements using a
+  Gaussian sensing matrix with orthonormalized rows and zero-mean
+  white Gaussian noise with variance <small>10<sup>-3</sup></small>. The
+	videos in the left and right panels correspond
+  to typical and atypical reconstructions, respectively, performed by
+  the 
+
+
+ ExCoV
+
+ algorithm under the chosen simulation setup. The
+  atypical reconstruction corresponds to a difficult case. Following
+  the videos, we show Fig. 1 with the signal estimates of various
+  methods for the difficult case. </p> 
+  <p align="justify" class="style4">Figs. 2 and 3 show the average MSEs of various methods ) as functions of the number of measurements <em>N</em>, for binary sparse signals (Fig. 2) and Gaussian sparse signals (Fig. 3). The simulated sparse signals have length 512 containing 20 randomly placed non-zero elements. The sensing matrix is Gaussian with orthonormalized rows and the measurement noise is white Gaussian with mean zero and variance <small>10<sup>-5</sup></small>. To reproduce Figs. 2 and 3, please download version 2.0 of the code and run the simulation according to the readme file.</p>
+  <p align="justify" class="style4">We demonstrate the reconstruction of the Shepp-Logan phantom of 
+  size 128 by 128 in Fig. 4 (a) from tomographic 
+projections. The elements of the measurements are 2-D discrete Fourier transform 
+(DFT) coefficients of the phantom image in Fig. 4 (a) sampled over a star-shaped domain, as illustrated 
+in Fig.4 (b). We use Haar wavelet as the sparsifying basis and the effective sensing matrix for the sparse wavelet coefficients is a composition of selected 
+rows of 2-D DFT matrix specified by the star shape in Fig.4 (b) and the inverse Haar wavelet matrix. Fig.4 (c)-(f) present the reconstructed images from the 30 radial lines given in  Fig.4 (b) by filtered back-projection, normalized IHT, GPSR and approximate 
+
+
+ ExCoV,
+
+ respectively. In Fig. 5, we vary the number of radial lines from 26
+to 43, and, consequently, the measurement ratio N/m from 0.19 to 0.31. The codes for this tomographic imaging example have been included in the Version 2.1 package.</p>
+  <div align="center">
+     <p>
+       <object width="425" height="350" align="middle">
+         <param name="movie" value="http://www.youtube.com/v/t7Vhj3wid0c">
+         </param>
+         <embed src="http://www.youtube.com/v/t7Vhj3wid0c" width="425" height="350" align="middle" type="application/x-shockwave-flash"></embed>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </object>
+       <object width="425" height="350" align="middle">
+         <param name="movie" value="http://www.youtube.com/v/gug2ds6aHmo">
+         </param>
+         <embed src="http://www.youtube.com/v/gug2ds6aHmo" width="425" height="350" align="middle" type="application/x-shockwave-flash"></embed>
+       </object>
+</p>
+  </div>
+        <p align="center"><img src="Realization_tough.jpg"
+        width="1082" height="744"><br>
+        <span class="style4">Fig. 1</span>        </p>
+        <p align="center"><img src="Binary_MSEvsN.jpg" width="744" height="509"><br>
+          <span class="style4">Fig. 2 </span></p>
+        <p align="center"><img src="Gaussian_MSEvsN.jpg" width="743" height="511"><br>
+        <span class="style4">Fig. 3</span></p>
+        <p align="center"><img src="Phantom.jpg" width="804" height="430"><br>
+        <span class="style4">Fig. 4</span>        </p>
+        <p align="center"><img src="PSNRcurve.jpg" width="773" height="561"><br>
+          <span class="style4">Fig. 5
+  </span> </p>
+</div>
+
+<p align="justify" class="style4"><strong>Follow-up work:</strong><strong><br>
+    </strong><a href="http://dsp.ucsd.edu/%7Ezhilin/">Zhilin Zhang</a> conducted <a href="http://marchonscience.blogspot.com/2011/06/misunderstandings-on-sparse-bayesian.html">additional simulation experiments</a> that include comparison with ExCoV.</p>
+
+</body>
+</html>

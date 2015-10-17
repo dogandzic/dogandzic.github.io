@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>EE 224 recitation 14, practice</title>
+	<link type="text/css" rel="stylesheet" href="http://home.eng.iastate.edu/~ald/ald_files/article.css"/>
+	<meta name="bibtex" content="e524"/>
+	<meta name="bibliostyle" content="IEEEtran"/>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }}); 
+MathJax.Hub.Config({
+tex2jax: {
+inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+}
+});
+</script> <script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<p><span class="math">\(
+   \def\df{\triangleq}
+   \def\E{\mathrm{e}}
+   \def\J{\mathrm{j}}
+ \def\upi{&pi;}
+\def\Exp{{\rm E}\,}
+\DeclareMathOperator{\Pr}{Pr}
+\DeclareMathOperator{\Realpart}{Re}
+\def\tb{\text{b}}
+\def\tc{\text{c}}
+\def\td{\text{d}}
+\def\tF{\text{F}}
+\def\dif{{\rm d}}
+\)</span></p>
+
+<h4 id="objective">Objective</h4>
+
+<ul>
+<li>Apply the sampling theorem.</li>
+</ul>
+
+<p>Impulse train: $p(t) = \sum_{k=-\infty}^{+\infty} \delta(t-k T_0)$. </p>
+
+<h4 id="practice:samplingacomplex-valuedsignal">Practice: Sampling a complex-valued signal</h4>
+
+<p>The Fourier transform $X^\tF(\omega)$ of $x(t)$ is shown below:</p>
+
+<p><img src="graphics/mt2.jpg" width="600px" /></p>
+
+<p>Note that $X^{\rm F}(\omega)$ is real-valued. </p>
+
+<p>(a) The signal $x(t)$ is sampled with sampling period $T_0=10$ms = $0.01$s, i.e.,
+$x[n] = x(n T_0)$. Draw the Fourier transform
+<span class="math">\(\mathcal{F}\{ x(t) p(t) \}\)</span>
+of the impulse-sampled signal $x(t) p(t)$ for the values of $\omega$ between
+$&#8211;2 \upi/T_0$ and $2 \upi/T_0$rad/s.</p>
+
+<p>(b) Is the sampled signal $x(t) p(t)$ real-valued? Explain your answer.</p>
+
+<h4 id="practice">Practice</h4>
+
+<p>Signal $x(t)$ has the following Fourier transform:
+<span class="math">\[
+    X^\tF(\omega) = \begin{cases} 1, & |\omega|
+    \leqslant 8 \upi \\
+    0, & \text{otherwise} \end{cases} 
+\]</span></p>
+
+<p>(a) Plot $X^\tF(\omega)$.</p>
+
+<p>(b) Carefully illustrate the Fourier transform of
+the impulse-sampled signal $x(t) p(t)$
+for sampling periods $T_0=1/16$s and $T_0=1/4$s.</p>
+
+<p>(c) Is $x(t)$ bandlimited? If so, find its bandwidth
+ and its Nyquist rate. If not, why not?</p>
+
+<h4 id="practice:demodulationwithanidealsampler">Practice: Demodulation with an ideal sampler</h4>
+
+<p>Multiplying a
+signal $x(t)$ with <span class="math">\(\cos(\omega_\tc t)\)</span> produces a modulated
+signal
+<span class="math">\[
+    z(t) = x(t) \cos(\omega_\tc t)
+\]</span>
+where <span class="math">\(\omega_\tc\)</span> is the carrier frequency in rad/s.
+One way to demodulate this signal and recover $x(t)$ is to multiply
+$z(t)$ by $\cos(\omega_\tc t)$ and lowpass filter the result.</p>
+
+<p>You will show that you can achieve the same effect with an ideal
+sampler. The block diagram of the receiver is</p>
+
+<p><img src="graphics/hw11rec.png" width="600px" /></p>
+
+<p>where the ideal sampler is drawn as a switch that closes
+instantaneously every $T_0$ seconds to acquire a new sample.
+Assume that $x(t)$ is a baseband signal with bandwidth
+<span class="math">\(\omega_\tb\)</span>rad/s and, as usual, that the carrier frequency
+<span class="math">\(\omega_\tc \gg 2 \omega_\tb\)</span>.</p>
+
+<p>(a) Write an expression for $R^\tF(\omega)$ in terms of
+$Z^\tF(\omega)$.</p>
+
+<p>(b)
+Show that we can recover $x(t)$ if the ideal sampler operates at the
+sampling rate $\omega_0 = \omega_{\text{c}}$rad/s. Draw the spectra $Z^{\rm
+F}(\omega)$ and $R^{\rm F}(\omega)$ of the input signal $z(t)$ and
+signal $r(t)$ right before the lowpass filter.</p>
+</body>
+</html>

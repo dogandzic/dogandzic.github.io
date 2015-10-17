@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="AsciiDoc 8.6.9">
+<title>EE 524 Digital Signal Processing</title>
+<style type="text/css">
+/* --------------------------------------------------------------
+
+   article.css
+   * Overrides default styles in blueprint
+   * Adds some borders.
+   * Loaded last.
+
+
+-------------------------------------------------------------- */
+
+/* Default font settings. The font-size percentage is of 16px. */
+
+
+@font-face{
+  font-family:aaa;
+  src: url('ald_files/fonts/aaar.otf');
+}
+
+@font-face{
+  font-family:aaa;
+  src: url('ald_files/fonts/aaab.otf');
+font-weight: bold;
+}
+
+@font-face{
+  font-family:aaa;
+  src: url('ald_files/fonts/aaai.otf');
+font-style: italic;
+}
+
+body {
+  font-size: 100%;
+  color: #2222;
+/*  font-family: Helvetica, Arial, sans-serif;         */
+  font-family: aaa, Calibri, Tahoma, Verdana, sans-serif;
+  padding-right: 1em;
+  padding-left: 4em;
+  max-width: 46em;
+}
+
+.image-border {
+
+}
+
+/* Headings
+-------------------------------------------------------------- */
+
+h1,h2,h3,h4,h5,h6 { font-weight: normal; color: #111; }
+
+h1 { font-size: 2em; line-height: 1; margin-bottom: 0.5em; color:#C20000; } /*LBG Red*/
+/*h2 { font-size: 1.6em; margin-bottom: 0.5em; color:#4444; }*/
+h2 { font-size: 1.6em; margin-bottom: 0.5em; color:#C20000; }
+h3 { font-size: 1.2em; line-height: 1; margin-bottom: 0.5em; color:#4444; }
+h4 { font-size: 1em; font-weight: bold; line-height: 1.25; margin-bottom: 1.25em; margin-top: 0.25em; color:#C20000; font-family: aaa, Helvetica, sans-serif}
+h5 { font-size: 1em; font-weight: normal; line-height: 1.25; margin-bottom: 1.25em; color:#2222;}
+h6 { font-size: 1em; font-weight: bold; margin-bottom: 1.1em;}
+
+h1 img, h2 img, h3 img,
+h4 img, h5 img, h6 img {
+  margin: 0;
+}
+
+a {color: #222;}
+a:link, a:visited {
+	text-decoration: none;
+	color: #222;
+	border-color: #999;
+	border-width: 0 0 1px 0;
+	border-style: none none solid none;
+	padding: 0px 0px 1px 0px;
+    }
+
+.title {font-weight: bold;}
+
+/**************************************************************
+   Alignment classes for menu
+ **************************************************************/
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+
+</style>
+<script type="text/javascript">
+/*<![CDATA[*/
+var asciidoc = {  // Namespace.
+
+/////////////////////////////////////////////////////////////////////
+// Table Of Contents generator
+/////////////////////////////////////////////////////////////////////
+
+/* Author: Mihai Bazon, September 2002
+ * http://students.infoiasi.ro/~mishoo
+ *
+ * Table Of Content generator
+ * Version: 0.4
+ *
+ * Feel free to use this script under the terms of the GNU General Public
+ * License, as long as you do not remove or alter this notice.
+ */
+
+ /* modified by Troy D. Hanson, September 2006. License: GPL */
+ /* modified by Stuart Rackham, 2006, 2009. License: GPL */
+
+// toclevels = 1..4.
+toc: function (toclevels) {
+
+  function getText(el) {
+    var text = "";
+    for (var i = el.firstChild; i != null; i = i.nextSibling) {
+      if (i.nodeType == 3 /* Node.TEXT_NODE */) // IE doesn't speak constants.
+        text += i.data;
+      else if (i.firstChild != null)
+        text += getText(i);
+    }
+    return text;
+  }
+
+  function TocEntry(el, text, toclevel) {
+    this.element = el;
+    this.text = text;
+    this.toclevel = toclevel;
+  }
+
+  function tocEntries(el, toclevels) {
+    var result = new Array;
+    var re = new RegExp('[hH]([1-'+(toclevels+1)+'])');
+    // Function that scans the DOM tree for header elements (the DOM2
+    // nodeIterator API would be a better technique but not supported by all
+    // browsers).
+    var iterate = function (el) {
+      for (var i = el.firstChild; i != null; i = i.nextSibling) {
+        if (i.nodeType == 1 /* Node.ELEMENT_NODE */) {
+          var mo = re.exec(i.tagName);
+          if (mo && (i.getAttribute("class") || i.getAttribute("className")) != "float") {
+            result[result.length] = new TocEntry(i, getText(i), mo[1]-1);
+          }
+          iterate(i);
+        }
+      }
+    }
+    iterate(el);
+    return result;
+  }
+
+  var toc = document.getElementById("toc");
+  if (!toc) {
+    return;
+  }
+
+  // Delete existing TOC entries in case we're reloading the TOC.
+  var tocEntriesToRemove = [];
+  var i;
+  for (i = 0; i < toc.childNodes.length; i++) {
+    var entry = toc.childNodes[i];
+    if (entry.nodeName.toLowerCase() == 'div'
+     && entry.getAttribute("class")
+     && entry.getAttribute("class").match(/^toclevel/))
+      tocEntriesToRemove.push(entry);
+  }
+  for (i = 0; i < tocEntriesToRemove.length; i++) {
+    toc.removeChild(tocEntriesToRemove[i]);
+  }
+
+  // Rebuild TOC entries.
+  var entries = tocEntries(document.getElementById("content"), toclevels);
+  for (var i = 0; i < entries.length; ++i) {
+    var entry = entries[i];
+    if (entry.element.id == "")
+      entry.element.id = "_toc_" + i;
+    var a = document.createElement("a");
+    a.href = "#" + entry.element.id;
+    a.appendChild(document.createTextNode(entry.text));
+    var div = document.createElement("div");
+    div.appendChild(a);
+    div.className = "toclevel" + entry.toclevel;
+    toc.appendChild(div);
+  }
+  if (entries.length == 0)
+    toc.parentNode.removeChild(toc);
+},
+
+
+/////////////////////////////////////////////////////////////////////
+// Footnotes generator
+/////////////////////////////////////////////////////////////////////
+
+/* Based on footnote generation code from:
+ * http://www.brandspankingnew.net/archive/2005/07/format_footnote.html
+ */
+
+footnotes: function () {
+  // Delete existing footnote entries in case we're reloading the footnodes.
+  var i;
+  var noteholder = document.getElementById("footnotes");
+  if (!noteholder) {
+    return;
+  }
+  var entriesToRemove = [];
+  for (i = 0; i < noteholder.childNodes.length; i++) {
+    var entry = noteholder.childNodes[i];
+    if (entry.nodeName.toLowerCase() == 'div' && entry.getAttribute("class") == "footnote")
+      entriesToRemove.push(entry);
+  }
+  for (i = 0; i < entriesToRemove.length; i++) {
+    noteholder.removeChild(entriesToRemove[i]);
+  }
+
+  // Rebuild footnote entries.
+  var cont = document.getElementById("content");
+  var spans = cont.getElementsByTagName("span");
+  var refs = {};
+  var n = 0;
+  for (i=0; i<spans.length; i++) {
+    if (spans[i].className == "footnote") {
+      n++;
+      var note = spans[i].getAttribute("data-note");
+      if (!note) {
+        // Use [\s\S] in place of . so multi-line matches work.
+        // Because JavaScript has no s (dotall) regex flag.
+        note = spans[i].innerHTML.match(/\s*\[([\s\S]*)]\s*/)[1];
+        spans[i].innerHTML =
+          "[<a id='_footnoteref_" + n + "' href='#_footnote_" + n +
+          "' title='View footnote' class='footnote'>" + n + "</a>]";
+        spans[i].setAttribute("data-note", note);
+      }
+      noteholder.innerHTML +=
+        "<div class='footnote' id='_footnote_" + n + "'>" +
+        "<a href='#_footnoteref_" + n + "' title='Return to text'>" +
+        n + "</a>. " + note + "</div>";
+      var id =spans[i].getAttribute("id");
+      if (id != null) refs["#"+id] = n;
+    }
+  }
+  if (n == 0)
+    noteholder.parentNode.removeChild(noteholder);
+  else {
+    // Process footnoterefs.
+    for (i=0; i<spans.length; i++) {
+      if (spans[i].className == "footnoteref") {
+        var href = spans[i].getElementsByTagName("a")[0].getAttribute("href");
+        href = href.match(/#.*/)[0];  // Because IE return full URL.
+        n = refs[href];
+        spans[i].innerHTML =
+          "[<a href='#_footnote_" + n +
+          "' title='View footnote' class='footnote'>" + n + "</a>]";
+      }
+    }
+  }
+},
+
+install: function(toclevels) {
+  var timerId;
+
+  function reinstall() {
+    asciidoc.footnotes();
+    if (toclevels) {
+      asciidoc.toc(toclevels);
+    }
+  }
+
+  function reinstallAndRemoveTimer() {
+    clearInterval(timerId);
+    reinstall();
+  }
+
+  timerId = setInterval(reinstall, 500);
+  if (document.addEventListener)
+    document.addEventListener("DOMContentLoaded", reinstallAndRemoveTimer, false);
+  else
+    window.onload = reinstallAndRemoveTimer;
+}
+
+}
+asciidoc.install();
+/*]]>*/
+</script>
+</head>
+<body class="article">
+<div id="header">
+<h1>EE 524 Digital Signal Processing</h1>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_fall_2013">Fall 2013</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_m_w_f_10_10_50_1242_howe">M W F 10-10:50, 1242 Howe</h3>
+</div>
+<div class="sect2">
+<h3 id="_strong_instructor_strong"><strong>Instructor</strong></h3>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph"><p><a href="http://home.eng.iastate.edu/~ald">Aleksandar Dogandžić</a><br>
+3119 Coover<br>
+Office hours: M W 1-2<br>
+
+<script type="text/javascript">
+                    document.write( "<n uers=\"znvygb:nyq\100vnfgngr\056rqh\">nyq\100vnfgngr\056rqh<\057n>\056".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
+                </script></p></div>
+</div></div>
+</div>
+<div class="sect2">
+<h3 id="_strong_textbook_strong"><strong>Textbook</strong></h3>
+<div class="paragraph"><p>Dimitris G. Manolakis and Vinay K. Ingle, <em>Applied
+    Digital Signal Processing</em>, New York: Cambridge Univ. Press, 2011.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_strong_course_outline_strong"><strong>Course outline</strong></h3>
+<div class="ulist"><ul>
+<li>
+<p>
+A review of undergraduate signal processing: Discrete-time
+        signals and systems, Fourier and <em>z</em>-transforms, sampling and
+        reconstruction of signals,
+</p>
+</li>
+<li>
+<p>
+Linear transforms and wavelets,
+</p>
+</li>
+<li>
+<p>
+Sampling sparse signals,
+</p>
+</li>
+<li>
+<p>
+Multirate digital signal processing,
+</p>
+</li>
+<li>
+<p>
+Random signals and matrix algebra for signal description,
+</p>
+</li>
+<li>
+<p>
+Optimal linear filtering and prediction,
+</p>
+</li>
+<li>
+<p>
+Introduction to adaptive filtering.
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="_strong_grading_tentative_strong"><strong>Grading: (tentative)</strong></h3>
+<div class="ulist"><ul>
+<li>
+<p>
+30% Homework and projects,
+</p>
+</li>
+<li>
+<p>
+40% Midterm examinations,
+</p>
+</li>
+<li>
+<p>
+30% Final examination.
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="_strong_useful_links_strong"><strong>Useful links</strong></h3>
+<div class="ulist"><ul>
+<li>
+<p>
+<a href="https://bb.its.iastate.edu/webapps/portal/frameset.jsp">Blackboard
+Learn login</a>
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes"><hr></div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2013-12-23 15:10:00 CST
+</div>
+</div>
+</body>
+</html>
+                                                                                                                                                                                                                                                                          

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>MPEM</title>
+	<link type="text/css" rel="stylesheet" href="http://home.eng.iastate.edu/~ald/ald_files/article.css"/>
+
+</script>
+</head>
+<body>
+
+<h1 id="amax-productemalgorithmforreconstructingmarkov-treesparsesignalsfromcompressivesamples">A Max-Product EM Algorithm for Reconstructing Markov-tree Sparse Signals from Compressive Samples</h1>
+
+<p>Zhao Song and <a href="http://home.eng.iastate.edu/~ald/index.html">Aleksandar Dogandžić</a></p>
+
+<h3 id="reference:">Reference:</h3>
+
+<p><em>IEEE Trans. Signal Processing</em>, vol. 61, 2013, vol. 61, no. 23, pp. 5917–5931, 2013.
+<a href="MPEMRef.bib">BibTeX</a></p>
+
+<h3 id="abstract">Abstract</h3>
+
+<p>We propose a Bayesian expectation-maximization (EM) algorithm for reconstructing Markov-tree sparse signals via belief propagation. The measurements follow an underdetermined linear model where the regression-coefficient vector is the sum of an unknown approximately sparse signal and a zero-mean white Gaussian noise with an unknown variance. The signal is composed of large- and small-magnitude components identified by binary state variables whose probabilistic dependence structure is described by a Markov tree. Gaussian priors are assigned to the signal coefficients given their state variables and the Jeffreys’ noninformative prior is assigned to the noise variance. Our signal reconstruction scheme is based on an em iteration that aims at maximizing the posterior distribution of the signal and its state variables given the noise variance. We construct the missing data for the em iteration so that the complete-data posterior distribution corresponds to a hidden Markov tree (HMT) probabilistic graphical model that contains no loops and implement its maximization (M) step via a max-product algorithm. This EM algorithm estimates
+the vector of state variables <em>as well as</em> solves iteratively a linear system of equations to obtain the corresponding signal estimate. We select the noise variance so that the corresponding estimated signal and state variables obtained upon convergence of the EM iteration have the largest marginal posterior distribution. We compare the proposed and existing state-of-the-art reconstruction methods via signal and image reconstruction experiments.</p>
+
+<h3 id="indexterms">Index Terms</h3>
+
+<p>Belief propagation, compressed sensing,
+expectation-maximization algorithms, hidden Markov models,
+ signal reconstruction.</p>
+
+<h3 id="fullpaperdownload:">Full paper download:</h3>
+
+<p><a href="MPEM.pdf"><img src="pdficon.gif" alt="pdfIcon" /></a> 
+(5.9 MB)</p>
+
+<h3 id="matlabcodedownload:">Matlab code download:</h3>
+
+<p>Here is the code for reproducing the results reported in this
+paper. Please read the enclosed “Readme” file as well. If you use this
+code in your research and publications, please refer to the above paper.</p>
+
+<p><a href="MPEM_V1.0.zip"><img src="zipicon.png" alt="zipIcon" /></a> 
+(1.1 MB)</p>
+
+</body>
+</html>
