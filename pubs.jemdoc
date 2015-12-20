@@ -35,22 +35,26 @@ reconstruction,” version 3, ArXiv e-prints, Nov. 2010. arXiv:
 ~~~
 {Journal Papers}
 
+R. Gu and A. Dogandžić, "Blind X-ray CT image reconstruction from polychromatic Poisson measurements," 
+/IEEE Trans. Comput. Imag./, 2015, in revision.
+
+
 Z. Song and A. Dogandžić, "[https://sites.google.com/site/mpemsite
   A max-product EM algorithm for reconstructing Markov-tree sparse
-  signals from compressive samples]," /IEEE Trans. Signal Process.,/
+  signals from compressive samples]," /IEEE Trans. Signal Process./,
 vol. 61, no. 23, pp. 5917–5931, 2013.
 
 K. Qiu and A. Dogandžić, "[ECME.html Sparse signal reconstruction via
-ECME hard thresholding]," /IEEE Trans. Signal Process.,/ vol. 60,
+ECME hard thresholding]," /IEEE Trans. Signal Process./, vol. 60,
 pp. 4551-4569, Sep. 2012.
 
 K. Qiu and A. Dogandžić, "[GEM.htm
 Sparse signal reconstruction from quantized noisy measurements via GEM hard
-thresholding]," /IEEE Trans. Signal Process.,/ vol. 60, pp. 2628-2634, May 
+thresholding]," /IEEE Trans. Signal Process./, vol. 60, pp. 2628-2634, May 
 2012.
 
 K. Qiu and A. Dogandžić, "[ExCoV.htm Variance-component based sparse signal
-reconstruction and model selection]," /IEEE Trans. Signal Process.,/ vol. 
+reconstruction and model selection]," /IEEE Trans. Signal Process./, vol. 
 58,
 pp. 2935-2952, Jun. 2010.
 
@@ -178,7 +182,7 @@ Canada, May 2013, pp. 1085-1089.
 
 K. Qiu and A. Dogandžić, "[DMECME.htm Nonnegative signal reconstruction 
 from compressive samples via a difference map ECME algorithm]," in /Proc. 
-IEEE Workshop on Statistical Signal Process.,/ Nice, France,   Jun. 2011,  
+IEEE Workshop on Statistical Signal Process./, Nice, France,   Jun. 2011,  
 pp. 561-564.
 
 K. Qiu and A. Dogandžić, "ECME hard thresholding methods for image 
