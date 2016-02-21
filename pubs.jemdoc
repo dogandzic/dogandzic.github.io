@@ -120,8 +120,9 @@ estimation in unknown spatially correlated noise using the EM algorithm,"
 A. Dogandžić and A. Nehorai, "Generalized multivariate analysis of 
 variance: a unified framework for signal processing in correlated noise," 
 /IEEE Signal Process. Mag./, vol. 20, pp. 39-54, Sept. 2003, ([gmanova.pdf 
-pdf]). [gmanova.html Bibliography update] (related signal processing 
-articles that appeared after the publication of this article).
+pdf]). 
+#[gmanova.html Bibliography update] (related signal processing articles 
+#that appeared after the publication of this article).
 
 A. Dogandžić, "Chernoff bounds on pairwise error probabilities of 
 space-time codes," /IEEE Trans. Inform. Theory/, vol. 49, pp. 1327-1336, 
@@ -163,7 +164,7 @@ Speech, Signal Process./, Shanghai, China, March 2016, to appear.
  
 
 
-R. Gu and A. Dogandžić, "[https://impactstory.org/d/product/3tggx7bzwpq8prahcysilpad  Projected Nesterov’s proximal-gradient 
+R. Gu and A. Dogandžić, "[http://isucsp.github.io/imgRecSrc/npg.html  Projected Nesterov’s proximal-gradient 
 signal recovery from compressive Poisson measurements]," /[http://www.asilomarssc.org  Proc.
 Asilomar Conf. Signals, Syst.  Comput.],/ Pacific
 Grove, CA, Nov. 2015, pp. 1490–1495.
