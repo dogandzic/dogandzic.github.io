@@ -11,7 +11,6 @@
    
 @font-face {
 	font-family: 'LeagueGothicRegular';
-	src: url('fonts/League_Gothic.eot');
 	src: local('League Gothic Regular'), local('LeagueGothic'), url('fonts/Arialnb.ttf') format('truetype');
 }   
 
