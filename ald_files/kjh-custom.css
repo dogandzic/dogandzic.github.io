@@ -11,7 +11,6 @@
    
 @font-face {
 	font-family: 'LeagueGothicRegular';
-	src: url('fonts/League_Gothic.eot');
 	src: local('League Gothic Regular'), local('LeagueGothic'), url('fonts/League_Gothic.ttf') format('truetype');
 }   
 
@@ -31,7 +30,12 @@ div.dogandzic{
     padding: 0px;
     margin: 60px 0px 0px;
     float: right;
+    /*text-align: center;*/
     text-align: right;
+    text-transform: uppercase; 
+    font: 72px/60px 'LeagueGothicRegular', 'Calibri', Verdana, sans-serif; 
+    letter-spacing: 1; 
+    color:#DD4A40;
 }
 
 div.dogandzic table,td,tr{
