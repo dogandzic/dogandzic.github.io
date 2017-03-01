@@ -15,22 +15,22 @@
 ~~~
 {Technical Reports}
 
-R. Gu and A. Dogandžić, "Projected Nesterov's proximal-gradient algorithm for sparse signal reconstruction with a convex constraint," version 6, 
-Oct. 2016, arXiv: 
-[http://arxiv.org/abs/1502.02613 1502.02613]
+R. Gu and A. Dogandžić. (Feb. 2017). Upper-bounding the regularization constant
+for convex sparse signal reconstruction. arXiv: 
+  [http://arxiv.org/abs/1702.07930 1702.07930] \[stat.CO\].
+
+
+R. Gu and A. Dogandžić.  (Oct. 2016). Projected Nesterov's 
+proximal-gradient algorithm for sparse signal reconstruction with a convex 
+constraint. version 6.  arXiv: [http://arxiv.org/abs/1502.02613 1502.02613]
 \[stat.CO\].
 
-R. Gu and A. Dogandžić, "Polychromatic X-ray CT image reconstruction
-and mass-attenuation spectrum estimation," Sep. 2015, arXiv: 
-[http://arxiv.org/abs/1509.02193 1509.02193]
+R. Gu and A. Dogandžić. (Sep. 2015).  Polychromatic X-ray CT image reconstruction
+and mass-attenuation spectrum estimation. arXiv: [http://arxiv.org/abs/1509.02193 1509.02193]
  \[stat.ME\].
 
-R. Gu and A. Dogandžić, "Reconstruction of nonnegative sparse signals using accelerated proximal-gradient algorithms," version 3, Mar. 2015, arXiv: 
-[http://arxiv.org/abs/1502.02613v3 1502.02613]
-\[stat.CO\].
-
-K. Qiu and A. Dogandžić, “ECME thresholding methods for sparse signal
-reconstruction,” version 3, ArXiv e-prints, Nov. 2010. arXiv:
+K. Qiu and A. Dogandžić. (Nov. 2010).  ECME thresholding methods for sparse signal
+reconstruction. version 3.  arXiv:
 [http://arxiv.org/abs/1004.4880 1004.4880] \[cs.IT\].
 
 
