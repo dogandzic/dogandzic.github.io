@@ -31,18 +31,11 @@ for convex sparse signal reconstruction. arXiv:
 R. Gu and A. Dogandžić, "[http://isucsp.github.io/pnpg
 Projected Nesterov’s proximal-gradient algorithm for sparse
 signal recovery]," /IEEE Trans. Signal Process./, 
-vol. 65, no. 13, pp. 3510–3525, 2017, [https://doi.org/10.1109/TSP.2017.2691661 \[doi\]].
+vol. 65, no. 13, pp. 3510–3525, 2017, [https://doi.org/10.1109/TSP.2017.2691661 \[doi\]] \[[pnpg.pdf pdf]\]. 
 
 {{<p>R. Gu and A. Dogandžić, &ldquo;<a href="http://isucsp.github.io/imgRecSrc/bhc.html"  target="_blank">Blind X-ray CT image reconstruction from polychromatic Poisson measurements</a>,&rdquo; 
-<i>IEEE Trans. Comput. Imag.</i>, vol. 2, no. 2, pp. 150–165, 2016.
+<i>IEEE Trans. Comput. Imag.</i>, vol. 2, no. 2, pp. 150–165, 2016,  [<a href="beamharden.pdf">pdf</a>].
 A brief <a href=" https://youtu.be/YYZUD82kDuc"  title="youtube presentation" target="_blank">video presentation</a>.}}
-
-
-
-
-  
-
-
 
 Z. Song and A. Dogandžić, "[https://sites.google.com/site/mpemsite
   A max-product EM algorithm for reconstructing Markov-tree sparse
@@ -71,81 +64,81 @@ fusion-center feedback]," /IEEE Trans. Signal Process./, vol. 56, pp.
 
 A. Dogandžić and B.H. Zhang, "Bayesian complex amplitude estimation and 
 adaptive signal detection in low-rank interference," /IEEE Trans. Signal 
-Process./, vol. 55, pp. 1176-1182, Mar. 2007, ([complampest.pdf pdf]). 
+Process./, vol. 55, pp. 1176-1182, Mar. 2007, \[[complampest.pdf pdf]\]. 
 
 W. Mo, Z.D. Wang, and A. Dogandžić, "EM-based iterative receiver for coded 
 MIMO systems in unknown spatially correlated noise," /Wirel. Commun. Mobile 
-Comput./, vol. 7, pp. 81-89, Jan. 2007, ([EMturbo.pdf pdf]).
+Comput./, vol. 7, pp. 81-89, Jan. 2007, \[[EMturbo.pdf pdf]\].
 
 A. Dogandžić and B.H. Zhang, "Bayesian NDE defect signal analysis," /IEEE 
 Trans. Signal Process./,    vol. 55, pp. 372-378, Jan. 2007, 
-([paperslice.pdf pdf]).
+\[[paperslice.pdf pdf]\].
 
 J. Wang, A. Dogandžić, and A. Nehorai, "Maximum likelihood estimation of 
 compound-Gaussian clutter and target parameters," /IEEE Trans. Signal 
-Process./, vol. 54, pp. 3884-3898, Oct. 2006, ([Compound.pdf pdf]).
+Process./, vol. 54, pp. 3884-3898, Oct. 2006, \[[Compound.pdf pdf]\].
 
 A. Dogandžić and B.H. Zhang, "Distributed estimation and detection for 
 sensor networks using  hidden Markov random field models," /IEEE Trans. 
-Signal Process./, vol. 54, pp. 3200-3215, Aug. 2006, ([HMRF.pdf pdf]).
+Signal Process./, vol. 54, pp. 3200-3215, Aug. 2006, \[[HMRF.pdf pdf]\].
 
 D. Gutiérrez, A. Nehorai, and A. Dogandžić, "Performance analysis of
 reduced-rank beamformers for estimating dipole source signals using
 EEG\/MEG," /IEEE Trans.  Biomedical Engineering/, vol. 53, pp. 840-844,
-May 2006. ([bme.pdf pdf]).
+May 2006. \[[bme.pdf pdf]\].
 
 A. Dogandžić and P. Xiang,"Estimating statistical properties of 
 eddy-current signals from steam generator tubes," /IEEE Trans. Signal 
-Process./,  vol. 53, pp. 3342-3348, Aug. 2005, ([eddy.pdf pdf]).
+Process./,  vol. 53, pp. 3342-3348, Aug. 2005, \[[eddy.pdf pdf]\].
 
 A. Dogandžić and J.H. Jin, "Estimating statistical properties of MIMO 
 fading channels," /IEEE Trans. Signal Process./, vol. 53, pp.  3065-3080, 
-Aug. 2005, ([statpropMIMO.pdf pdf]). 
+Aug. 2005, \[[statpropMIMO.pdf pdf]\]. 
 
 A. Dogandžić and B.H. Zhang,"Dynamic shadow power estimation for wireless 
 communications," /IEEE Trans. Signal Process./, vol. 53, pp. 2942-2948, 
-Aug. 2005, ([dynamic.pdf pdf]).
+Aug. 2005, \[[dynamic.pdf pdf]\].
 
 A. Dogandžić and B.H. Zhang, "Estimating Jakes' Doppler power spectrum 
 parameters using the Whittle approximation," /IEEE Trans. Signal Process./, 
-vol. 53, pp. 987-1005, Mar. 2005, ([Doppler.pdf pdf]). 
+vol. 53, pp. 987-1005, Mar. 2005, \[[Doppler.pdf pdf]\]. 
 
 A. Dogandžić and J.H. Jin, "Maximum likelihood estimation of statistical 
 properties of composite gamma-lognormal fading channels," /IEEE Trans. 
-Signal Process./, vol. 52, pp. 2940-2945, Oct. 2004, ([fadshadest.pdf 
-pdf]). 
+Signal Process./, vol. 52, pp. 2940-2945, Oct. 2004, \[[fadshadest.pdf 
+pdf]\]. 
 
 A. Dogandžić, W. Mo, and Z.D. Wang, "Semi-blind SIMO flat-fading channel 
 estimation in unknown spatially correlated noise using the EM algorithm," 
 /IEEE Trans. Signal Process./, vol. 52, pp. 1791-1797, Jun. 2004, 
-([semiblind.pdf pdf]).   
+\[[semiblind.pdf pdf]\].   
 
 A. Dogandžić and A. Nehorai, "Generalized multivariate analysis of 
 variance: a unified framework for signal processing in correlated noise," 
-/IEEE Signal Process. Mag./, vol. 20, pp. 39-54, Sept. 2003, ([gmanova.pdf 
-pdf]). 
+/IEEE Signal Process. Mag./, vol. 20, pp. 39-54, Sept. 2003, \[[gmanova.pdf 
+pdf]\]. 
 #[gmanova.html Bibliography update] (related signal processing articles 
 #that appeared after the publication of this article).
 
 A. Dogandžić, "Chernoff bounds on pairwise error probabilities of 
 space-time codes," /IEEE Trans. Inform. Theory/, vol. 49, pp. 1327-1336, 
-May 2003, ([Chernoff.pdf pdf]).
+May 2003, \[[Chernoff.pdf pdf]\].
 
 A. Dogandžić and A. Nehorai, "Finite-length MIMO adaptive equalization 
 using canonical correlation analysis," /IEEE Trans. Signal Process./, vol. 
-50, pp. 984-989, April 2002, ([MIMOpaper.pdf pdf]). 
+50, pp. 984-989, April 2002, \[[MIMOpaper.pdf pdf]\]. 
 
 A. Dogandžić and A. Nehorai, "Space-time fading channel estimation and 
 symbol detection in unknown spatially correlated noise," /IEEE Trans. 
-Signal Process./, vol. 50, pp. 457-474, Mar. 2002, ([spacetime.pdf pdf]). 
+Signal Process./, vol. 50, pp. 457-474, Mar. 2002, \[[spacetime.pdf pdf]\]. 
 
 A. Dogandžić and A. Nehorai, "Cramér-Rao bounds for estimating range, 
 velocity, and direction with an active array," /IEEE Trans. Signal 
-Process./, vol. 49, pp. 1122-1137, Jun. 2001, ([CRBpaper.pdf pdf]). 
+Process./, vol. 49, pp. 1122-1137, Jun. 2001, \[[CRBpaper.pdf pdf]\]. 
 
 A. Dogandžić and A. Nehorai, "Estimating evoked dipole responses in unknown 
 spatially correlated noise with EEG\/MEG arrays," /IEEE Trans. Signal 
-Process./, vol. 48, pp. 13-25, Jan. 2000, ([MEGpaper.pdf pdf]).
+Process./, vol. 48, pp. 13-25, Jan. 2000, \[[MEGpaper.pdf pdf]\].
 ~~~
 
 ~~~
@@ -154,7 +147,7 @@ Process./, vol. 48, pp. 13-25, Jan. 2000, ([MEGpaper.pdf pdf]).
 A. Dogandžić and A. Nehorai, 
 "EEG\/MEG spatio-temporal dipole source estimation and sensor array design," in /High-Resolution and 
 Robust Signal Process./, Y. Hua, A.B. Gershman, and Q. Cheng (Eds.), New 
-York: Marcel Dekker, 2003, Ch. 7, pp. 393-442,  ([bookchapter.pdf pdf]).  
+York: Marcel Dekker, 2003, Ch. 7, pp. 393-442,  \[[bookchapter.pdf pdf]\].  
 ~~~
 
 ~~~
@@ -191,7 +184,7 @@ pp. 561-564.
 K. Qiu and A. Dogandžić, "ECME hard thresholding methods for image 
 reconstruction from compressive samples," in /Applications of Digital Image 
 Process. XXXIII/,   Andrew G. Tescher  (Ed.), Proc. SPIE, vol. 7798,  San 
-Diego, CA: SPIE,    Aug. 2010, 779813, ([ECME_SPIE.pdf pdf]).
+Diego, CA: SPIE,    Aug. 2010, 779813, \[[ECME_SPIE.pdf pdf]\].
 ~~~
 
 
