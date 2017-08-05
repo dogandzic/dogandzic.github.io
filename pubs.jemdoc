@@ -35,7 +35,8 @@ vol. 65, no. 13, pp. 3510–3525, 2017, [https://doi.org/10.1109/TSP.2017.269166
 
 {{<p>R. Gu and A. Dogandžić, &ldquo;<a href="http://isucsp.github.io/imgRecSrc/bhc.html"  target="_blank">Blind X-ray CT image reconstruction from polychromatic Poisson measurements</a>,&rdquo; 
 <i>IEEE Trans. Comput. Imag.</i>, vol. 2, no. 2, pp. 150–165, 2016,  [<a href="beamharden.pdf">pdf</a>].
-A brief <a href=" https://youtu.be/YYZUD82kDuc"  title="youtube presentation" target="_blank">video presentation</a>.}}
+A brief <a href=" https://youtu.be/YYZUD82kDuc"  title="youtube presentation" target="_blank">video presentation</a>.</p>}}
+
 
 Z. Song and A. Dogandžić, "[https://sites.google.com/site/mpemsite
   A max-product EM algorithm for reconstructing Markov-tree sparse
@@ -113,12 +114,17 @@ estimation in unknown spatially correlated noise using the EM algorithm,"
 /IEEE Trans. Signal Process./, vol. 52, pp. 1791-1797, Jun. 2004, 
 \[[semiblind.pdf pdf]\].   
 
-A. Dogandžić and A. Nehorai, "Generalized multivariate analysis of 
-variance: a unified framework for signal processing in correlated noise," 
-/IEEE Signal Process. Mag./, vol. 20, pp. 39-54, Sept. 2003, \[[gmanova.pdf 
-pdf]\]. 
-#[gmanova.html Bibliography update] (related signal processing articles 
-#that appeared after the publication of this article).
+
+{{
+<p>A. Dogandžić and A. Nehorai, &ldquo;Generalized multivariate analysis of 
+variance: a unified framework for signal processing in correlated noise,&rdquo; 
+<i>IEEE Signal Process. Mag.</i>, vol. 20, pp. 39-54, Sept. 2003, [<a href="gmanova.pdf">pdf</a>].
+<a href="gmanova.html"  title="bibliography update" target="_blank">Bibliography update</a> (a few related signal processing articles 
+that appeared after the publication of this article).
+</p>
+}}
+
+
 
 A. Dogandžić, "Chernoff bounds on pairwise error probabilities of 
 space-time codes," /IEEE Trans. Inform. Theory/, vol. 49, pp. 1327-1336, 
