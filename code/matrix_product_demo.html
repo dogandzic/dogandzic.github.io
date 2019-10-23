@@ -13076,16 +13076,36 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">A</span><span class="o">=</span><span class="n">randn</span><span class="p">(</span><span class="mi">5000</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span> <span class="n">B</span><span class="o">=</span><span class="n">randn</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">10000</span><span class="p">);</span> <span class="n">C</span><span class="o">=</span><span class="n">randn</span><span class="p">(</span><span class="mi">10000</span><span class="p">,</span><span class="mi">10000</span><span class="p">);</span>
 <span class="nd">@time</span> <span class="n">D</span><span class="o">=</span> <span class="n">A</span><span class="o">*</span><span class="n">B</span><span class="o">*</span><span class="n">C</span><span class="p">;</span>
-<span class="nd">@time</span> <span class="n">D</span><span class="o">=</span> <span class="p">(</span><span class="n">A</span><span class="o">*</span><span class="n">B</span><span class="p">)</span><span class="o">*</span><span class="n">C</span><span class="p">;</span> <span class="c"># ask julia to do AB first</span>
-<span class="o">&amp;</span><span class="n">time</span> <span class="n">D</span><span class="o">=</span> <span class="n">A</span><span class="o">*</span><span class="p">(</span><span class="n">B</span><span class="o">*</span><span class="n">C</span><span class="p">);</span> <span class="c"># ask julia to do BC first</span>
+<span class="nd">@time</span> <span class="n">D</span><span class="o">=</span> <span class="p">(</span><span class="n">A</span><span class="o">*</span><span class="n">B</span><span class="p">)</span><span class="o">*</span><span class="n">C</span><span class="p">;</span> <span class="c"># do AB first</span>
+<span class="nd">@time</span> <span class="n">D</span><span class="o">=</span> <span class="n">A</span><span class="o">*</span><span class="p">(</span><span class="n">B</span><span class="o">*</span><span class="n">C</span><span class="p">);</span> <span class="c"># do BC first</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>  9.850213 seconds (8 allocations: 762.940 MiB, 1.16% gc time)
+ 10.430705 seconds (8 allocations: 762.940 MiB, 0.84% gc time)
+  0.322328 seconds (8 allocations: 381.623 MiB, 14.76% gc time)
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
